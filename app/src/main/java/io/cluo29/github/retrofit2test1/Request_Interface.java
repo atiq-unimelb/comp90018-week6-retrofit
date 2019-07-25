@@ -15,7 +15,6 @@ import retrofit2.http.QueryMap;
 public interface Request_Interface {
 
     // put the request string inside annotation
-//    @GET("ajax.php?a=fy&f=auto&t=auto&w={script}")
     @GET("ajax.php")
     Call<MainActivity.Translation> getCall(@QueryMap Map<String, String> params);
 
